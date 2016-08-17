@@ -1,48 +1,28 @@
 Rails Devise With Intercom
 ================
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+To start testing your Intercom app on this sample app you need to clone this repo:
 
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
+```shell
+  git clone https://github.com/Skaelv/rails-devise-with-intercom
+  cd rails-devise-with-intercom
+  bundle install
+```
 
-Problems? Issues?
------------
+In the `config/initializers/intercom.rb` file replace the following line with your Intercom app_id:
+```ruby
+  config.app_id = ENV["INTERCOM_APP_ID"] || "<your-app-id>"
+```
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
+And run the ruby server :
+```shell
+rails s
+```
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
+If everything is fine you should see the Intercom messenger appear right away.
 
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
-
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.3.1
-- Rails 4.2.7.1
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
+Troubleshooting
 ----------------
 
-Contributing
-------------
-
-Credits
--------
-
-License
--------
+If the Intercom messenger doesn't show up. Check that you have registered to any Intercom product.
+If you didn't subscribe to Acquire but to other products, try to sign-up to the sample app and see if the messenger appears once you are logged-in.
