@@ -7,6 +7,7 @@ To start testing your Intercom app on this sample app you need to clone this rep
   git clone https://github.com/Skaelv/rails-devise-with-intercom
   cd rails-devise-with-intercom
   bundle install
+  rake db:migrate
 ```
 
 In the `config/initializers/intercom.rb` file replace the following line with your Intercom app_id:
