@@ -19,6 +19,14 @@ And run the ruby server :
 rails s
 ```
 
+If you want to use this repo to contribute/test [`intercom-rails`](https://github.com?intercom/intercom-rails) you can just modify the Gemfile as follow:
+
+```ruby
+gem 'intercom-rails', :git => 'https://github.com/intercom/intercom-rails.git', :ref => '0eec4'
+gem 'intercom-rails', :git => 'https://github.com/intercom/intercom-rails.git', :branch => 'new-feature-branch'
+```
+
+
 If everything is fine you should see the Intercom messenger appear right away.
 
 Troubleshooting
